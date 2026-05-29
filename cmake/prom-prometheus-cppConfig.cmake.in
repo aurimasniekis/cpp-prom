@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(prom @PROJECT_VERSION@)
+find_dependency(prometheus-cpp)
+
+include("${CMAKE_CURRENT_LIST_DIR}/prom-prometheus-cppTargets.cmake")
+
+check_required_components(prom-prometheus-cpp)

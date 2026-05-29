@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(commons 0.1)
+find_dependency(logman 0.1)
+find_dependency(dimval 0.2)
+include("${CMAKE_CURRENT_LIST_DIR}/promTargets.cmake")
+
+check_required_components(prom)

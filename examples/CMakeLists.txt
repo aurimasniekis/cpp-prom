@@ -1,0 +1,13 @@
+function(prom_add_example target src)
+    add_executable(${target} ${src})
+    target_link_libraries(${target} PRIVATE prom::prom)
+    prom_set_warnings(${target} PRIVATE)
+    prom_enable_sanitizers(${target})
+endfunction()
+
+prom_add_example(prom_library_metrics  library_metrics.cpp)
+prom_add_example(prom_null_only        null_only.cpp)
+prom_add_example(prom_all_metric_types all_metric_types.cpp)
+prom_add_example(prom_labeled          labeled.cpp)
+prom_add_example(prom_raw_values       raw_values.cpp)
+prom_add_example(prom_dimval_values    dimval_values.cpp)
