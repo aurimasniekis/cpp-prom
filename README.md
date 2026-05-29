@@ -115,7 +115,7 @@ include(FetchContent)
 FetchContent_Declare(
     prom
     URL      https://github.com/aurimasniekis/cpp-prom/archive/refs/tags/v0.1.0.tar.gz
-    URL_HASH SHA256=0000000000000000000000000000000000000000000000000000000000000000
+    URL_HASH SHA256=7a2cb15120646c6cb004df38911ef275a2c90f68b0ad2484ed434c3c8478a0e7
     DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
 FetchContent_MakeAvailable(prom)
